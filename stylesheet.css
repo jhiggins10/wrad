@@ -1,0 +1,137 @@
+/*css style sheet for website*/
+body {
+    background-color: white;
+}
+
+
+.navbar {
+    overflow: hidden;
+    background-color: black;
+	color: white;
+    font-family: Arial;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: gray;
+	color: white;
+	text-decoration:underline
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+	color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: black;
+	color: white;
+	text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+	
+	.imgexample{
+	float: center;
+	border-radius: 8px;
+	 display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	}
+	
+	#logo{
+		position: left;
+	}
+	
+	
+	#h3VideoandQuiz{
+		color: black;
+		text-decoration: underline;
+		position: left;
+	}
+	#pQuiz{
+		colour: black;
+	}
+	
+	#pinfo{
+		color: black;
+		text-decoration: none;
+		text align: left;
+	}
+	
+	#pimportant{
+		color: purple;
+	}
+	
+	#pQuestion{
+		color:black
+		text-decoration:underline;
+		font-weight: bold;
+	}
+	#h2quiz{
+		text-decoration:underline;
+		color: black;
+	}
+	
+	#newSection{
+		text-decoration:underline;
+		color: black;
+		position: left;
+	}
+	
+	#questions{
+		color: black;
+		position: left;
+	}
+	
+	#pauthor{
+		color; black;
+		position: left;
+		font-size: 85%;
+	}
+	
+	.Cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}

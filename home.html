@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<!--code refrence:-->
+<!-- Title: CSS Dropdowns -->
+<!--Date: 19/12/17 -->
+<!--Code version: 1.0-->
+<!--Availability: https://www.w3schools.com/css/css_dropdowns.asp-->
+<style>
+  #header { font-size: 2em; 
+	       text-align: center;  
+	       border: solid 2px blue;
+	       border-radius: 25px; 
+               color:blue; }
+
+ .Cen {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+	}
+
+     #column2 {
+		float:left;
+		width: 25%; }
+
+</style>
+<head>
+<img src="Logo.jpg" alt="Logo">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!--adds jquery functionality-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--adds bootstrap functionality-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+<body>
+<body link="white">
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="search.html">Search</a>
+  <div class="dropdown">
+    <button class="dropbtn">Profile
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="login.php">Logout</a>
+    </div>
+  </div>  
+  <div class="dropdown">
+    <button class="dropbtn">Contact 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://twitter.com/WradSupport">Twitter</a>
+      <a href="https://fb.me/WradSupport">Facebook</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">other resources 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.w3schools.com">W3schools</a>
+      <a href="https://fb.me/WradSupport">Facebook</a>
+	  <a href="http://thecodingtrain.com">Coding Train</a>
+	  <a href="https://www.youtube.com/playlist?list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F">Learn HTML And CSS in 30 days</a>
+    </div>
+  </div>
+</div>   
+</div>
+<h1 style="text-align:center">Welcome to Wrad</h1>
+<p style="text-align:center"> learn how to create websites using videos, quizzes and so much more</p>
+<img src="homepage.jpg" alt="home page image" class="Cen" width="100" height="150">
+</body>
+</html>

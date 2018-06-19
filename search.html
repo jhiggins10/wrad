@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<!--code refrence:-->
+<!-- Title: How TO - Filter/Search List-->
+<!--Date: 19/12/17 -->
+<!--Code version: 1.0-->
+<!--Availability: https://www.w3schools.com/howto/howto_js_filter_lists.asp-->
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+//script used to find word
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<style>
+<!--style for webpage-->
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<img src="Logo.jpg" alt="Logo">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+<body>
+
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="search.html">Search</a>
+  <div class="dropdown">
+    <button class="dropbtn">Profile
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+            <a href="login.php">Logout</a>
+    </div>
+  </div>  
+  <div class="dropdown">
+    <button class="dropbtn">Contact 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://twitter.com/WradSupport">Twitter</a>
+      <a href="https://fb.me/WradSupport">Facebook</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">other resources 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://www.w3schools.com">W3schools</a>
+      <a href="https://fb.me/WradSupport">Facebook</a>
+	  <a href="http://thecodingtrain.com">Coding Train</a>
+	  <a href="https://www.youtube.com/playlist?list=PLgGbWId6zgaWZkPFI4Sc9QXDmmOWa1v5F">Learn HTML And CSS in 30 days</a>
+    </div>
+  </div>
+</div>   
+</div>
+<body>
+
+<h2>Search</h2> 
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+
+<table>
+  <thead>
+    <tr>
+      <th>Page</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody id="myTable">
+    <tr>
+      <td><a href="html.html">HTML</a></td>
+      <td>Learn the basics of html and how we use tags to change text and headers </td>
+      
+    </tr>
+    <tr>
+      <td><a href="images.html">HTML Images</a></td>
+      <td>Learn how to implement images into html pages as well as learn about the src and alt ags of the images</td>
+     
+    </tr>
+    <tr>
+      <td><a href="javascript.html">HTML Javascript</a></td>
+      <td>Learn how to change page events using javascript</td>
+      
+    </tr>
+    <tr>
+      <td><a href="htmlforms.html">HTML Forms</a></td>
+      <td>Learn how to use HTML forms to allow users to enter info</td>
+    </tr>
+	<tr>
+      <td><a href="tables.html">HTML Tables</a></td>
+      <td>Learn how we can create tables to store info</td>
+    </tr>
+	<tr>
+      <td><a href="CSStext.html"> CSS text-decoration</a></td>
+      <td>Learn how we can use CSS to create text-decoration and the </td> 
+    </tr>
+	<tr>
+      <td><a href="CSScolor.html">CSS colors</a></td>
+      <td>Learn how we can use CSS to improve and change text color</td>  
+    </tr>
+	<tr>
+      <td><a href="CSStable.html">CSS Table</a></td>
+      <td>Learn how we can use CSS to improve and change a html table</td>   
+    </tr>
+	<tr>
+      <td><a href="CSSweblay.html">CSS Website Layers</a></td>
+      <td>Learn how we can use CSS to improve and change the Website layout</td>   
+    </tr>
+	<tr>
+      <td><a href="JavaVara.html">Javascript Variables</a></td>
+      <td>Learn how we create and use Javascript Variables</td>
+      </tr>
+	<tr>
+      <td><a href="JavaArrays.html">Javascript Arrays</a></td>
+      <td>Learn how we use Arrys in Javascript to store data</td>   
+    </tr>
+	<tr>
+      <td><a href="JavaEvents.html">Javascript Events</a></td>
+      <td>Learn how we can use javascript events on your webpage</td>   
+    </tr>
+	<tr>
+      <td><a href="JavaLoops.html">Javascript Loops</a></td>
+      <td>Learn how we can use loops in javascript</td> 
+    </tr>
+  </tbody>
+</table>
+  
+
+
+</body>
+</html>

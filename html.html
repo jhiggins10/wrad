@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<!--code refrence:-->
+<!-- Title: Simple Javascript Quiz -->
+<!--Date: 17/01/18 -->
+<!--Code version: 1.0-->
+<!--Availability: https://codepen.io/harrysadlermusic/pen/DihjK -->
+<head>
+<img src="Logo.jpg" alt="Logo">
+<!--link to stylesheet-->
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<!--links to bootstrap and jquery plugins-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+<!--style for the page-->
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+  <a href="home.html">Home</a>
+  <a href="search.html">Search</a>
+  <div class="dropdown">
+    <button class="dropbtn">login
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+	  <a href="login.php">Logout</a>
+    </div>
+  </div>  
+  <div class="dropdown">
+    <button class="dropbtn">Contact 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://twitter.com/WradSupport">Twitter</a>
+      <a href="https://fb.me/WradSupport">Facebook</a>
+    </div>
+  </div> 
+</div>
+
+
+<p>HTML tags</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Text')">Text</button>
+  <button class="tablinks" onclick="openCity(event, 'Video')">Video</button>
+  <button class="tablinks" onclick="openCity(event, 'Activity')">Activity</button>
+</div>
+
+<div id="Text" class="tabcontent">
+  <h3 id = "h3VideoandQuiz">HTML tags</h3>
+  <p>HTML (Hyper Text Markup Language) is one of the main buliding blocks of web development. Almost every website uses it</p>
+  <h1 id = "newSection"> Tags </h1>
+  <p> one of the first things you need to know about in HTML is the use of tags, which are used to help format the document on a web browser. There are multiple types of tags such as : </p>
+  <p> <font color= "purple"> &lthead&gt</font> which sets up the head of the document </p>
+  <p> <font color= "purple"> &ltbody&gt</font> which sets up the body of the document </p>
+  <br>
+  <p> apart from those tags we also have </p>  
+  <p>  <font color= "purple"> &lti&gt</font> which sets text to be a italic font</p>
+  <p> <font color= "purple"> &ltb&gt</font> which sets to be in a bold font</p>
+  <p> <font color= "purple"> &ltsmall&gt</font> which sets the text to be small</p>
+  <b> and many more </b>
+  <br>
+  <img src="fonttext.jpg" alt="font tag in use" width="500" height="auto">
+  <img src="textwebpage.jpg" alt="Font text" width="500" height="auto">
+  <br>
+  <p> Look at the images above, can you see what makes the text change?</p> 
+
+   <h3 id ="h3VideoandQuiz"> paragraphs and line breaks </h3>
+    <p> a new paragraph will start with the <font color= "purple"> &ltP&gt </font>. if you want a line break you can use the <font color ="purple"> &ltbr&gt </font>  
+  
+	<p id ="pauthor">Text By Jack Higgins</p>
+  
+  
+</div>
+
+<div id="Video" class="tabcontent">
+  <h1 id = "h3VideoandQuiz">Video</h1>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dmovVa0jseU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <p align="Left"><small> Video by <a href="https://www.youtube.com/channel/UCXwNiSsidjrKn0f93ghw0ug">Simple Tutorials</small></a></p>
+</div>
+
+<div id="Activity" class="tabcontent">
+  <h1 id = "h3VideoandQuiz">Activity</h1>
+  <h2 id="h2quiz">Take a Quiz!</h2>
+  
+	<table style="width:583px">
+	<tr>
+	  <td>
+	  	<div id = "questions">
+	  		<p id="question">1. What does HTML stand for</p>
+
+	    	<ul>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">&ltHyperText Markup Language&gt</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>&ltHyperText Markdown Language&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>&ltHyperTool Markup Language&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>&ltHead shoulders knees and toes&gt</label>
+    		</ul>
+	  	</div>
+	  </td>
+	  <td>
+	  	<div id = "questions">
+	  		<p id="question">2. which tag is used for the head of the webpage</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>&ltheader&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">&lthead&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>&lth&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>&lttop&gt</label>
+	    	</ul>
+	  	</div>
+	  </td>
+	</tr>
+	<tr>
+	  <td>
+	  	<div id = "questions">
+	  		<p id="question">3. what tag would you use to make font italic?</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>&ltitalic&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">&lti&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>&ltitalian&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>&ltit&gt</label>
+	    	</ul>
+		</div>
+	  </td>
+	  <td>
+	  	<div id = "questions">
+	  		<p id="question">4. what tag is used for bold text in html</p>
+
+	    	<ul>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>&ltbold&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">&ltb&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>&ltboldtext&gt</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>&ltBOLD&gt</label>
+    		</ul>
+	  	</div>
+	  </td>
+	</tr>
+	</table>
+<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Submit" />
+    </div>
+  
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+function submitQuiz() {
+		console.log('submitted');
+
+	// get each answer score
+		function answerScore (qName) {
+			var radiosNo = document.getElementsByName(qName);
+
+			for (var i = 0, length = radiosNo.length; i < length; i++) {
+   				if (radiosNo[i].checked) {
+			// do something with radiosNo
+					var answerValue = Number(radiosNo[i].value);
+				}
+			}
+			// change NaNs to zero
+			if (isNaN(answerValue)) {
+				answerValue = 0;
+			}
+			return answerValue;
+		}
+
+	// calc score with answerScore function
+		var calcScore = (answerScore('q1') + answerScore('q2') + answerScore('q3') + answerScore('q4'));
+		console.log("CalcScore: " + calcScore); // it works!
+
+	// function to return correct answer string
+		function correctAnswer (correctStringNo, qNumber) {
+			console.log(" qNumber : " + qNumber);  // logs 1,2,3,4 after called below
+			return ("The correct answer for question #" + qNumber + ": &nbsp;<strong>" +
+				(document.getElementById(correctStringNo).innerHTML) + "</strong>");
+			}
+
+	// print correct answers only if wrong (calls correctAnswer function)
+		if (answerScore('q1') === 0) {
+			document.getElementById('correctAnswer1').innerHTML = correctAnswer('correctString1', 1);
+		}
+		if (answerScore('q2') === 0) {
+			document.getElementById('correctAnswer2').innerHTML = correctAnswer('correctString2', 2);
+		}
+		if (answerScore('q3') === 0) {
+			document.getElementById('correctAnswer3').innerHTML = correctAnswer('correctString3', 3);
+		}
+		if (answerScore('q4') === 0) {
+			document.getElementById('correctAnswer4').innerHTML = correctAnswer('correctString4', 4);
+		}
+
+	// calculate "possible score" integer
+		var questionCountArray = document.getElementsByClassName('question');
+
+		var questionCounter = 0;
+		for (var i = 0, length = questionCountArray.length; i < length; i++) {
+			questionCounter++;
+		}
+
+	// show score as "score/possible score"
+		var showScore = "Your Score: " + calcScore +"/4";
+	// if 4/4, "perfect score!"
+	//also sends user link to google doc certificiate as well as suggestings for next topic using alert
+		if (calcScore === 4) {
+			showScore = showScore + "&nbsp; <strong>Perfect Score!,<a href=https://drive.google.com/file/d/1FV9xSVdQ3AuHgsznFYXBGkPgso5NdDno/view?usp=sharing> certifacte </a></strong>"
+			alert("congrats you passed html basics!, why not try the other html tests or start with css");
+		};
+		document.getElementById('userScore').innerHTML = showScore;
+	}
+
+$(document).ready(function() {
+
+	$('#submitButton').click(function() {
+		$(this).addClass('hide');
+	});
+
+});
+</script>
+     
+</body>
+</html>

@@ -11,10 +11,10 @@ $username = "";
 $email   = "";
 $errors = array(); 
 
-$dbhost = 'elephant.ecs.westminster.ac.uk';
-$dbuser = 'w1503963';
-$dbpass = '9421wbdp2UR2';
-$dbname = 'w1503963_0';
+$dbhost = '';
+$dbuser = '';
+$dbpass = '***********';
+$dbname = '';
 
 // connect to the database
 $db = mysqli_connect($dbhost, $dbuser, $dbpass, $dbname);
